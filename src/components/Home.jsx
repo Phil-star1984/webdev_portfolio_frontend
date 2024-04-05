@@ -7,6 +7,14 @@ import aibro from "../assets/ai_news_mockup.jpg";
 import hackernews from "../assets/hackernews_mockup.jpg";
 import orbit from "../assets/orbit_mockup.jpg";
 import hackernewstwo from "../assets/hackernews_mockup_02.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faYoutube,
+  faLinkedinIn,
+  faGithub,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home({ user }) {
   return (
@@ -24,6 +32,41 @@ export default function Home({ user }) {
               </Nav.Link>
               <Nav.Link href="#link" className="text-secondary">
                 Link
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.facebook.com/philsplash/"
+                className="text-secondary"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faFacebookF} className="icon-large" />
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.youtube.com/@Theartistphil/videos"
+                className="text-secondary"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faYoutube} className="icon-large" />
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.linkedin.com/in/philipp-mulfinger-941498b1"
+                className="text-secondary"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} className="icon-large" />
+              </Nav.Link>
+              <Nav.Link
+                href="https://github.com/Phil-star1984?tab=repositories"
+                className="text-secondary"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faGithub} className="icon-large" />
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.instagram.com/the_million_painter/?hl=de"
+                className="text-secondary"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faInstagram} className="icon-large" />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

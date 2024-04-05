@@ -68,6 +68,18 @@ button:focus-visible {
 }
  */
 
+/* ///////////////////////// BRANDVISION START /////////////////////////// */
+/* .brandvision_wrapper {
+  background-color: black;
+} */
+.container_brandvision {
+  padding: 50px 0;
+}
+
+/* ///////////////////////// BRANDVISION END /////////////////////////// */
+
+/* ///////////////////////// FOOTER START /////////////////////////// */
+
 .container_footer {
   margin-top: 1rem;
   display: flex;
@@ -77,10 +89,10 @@ button:focus-visible {
 }
 
 /* styles.css */
-.social-list {
-  margin-top: 0.6rem;
-  list-style: none;
+ul.social-list {
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .social-item {
@@ -92,16 +104,51 @@ button:focus-visible {
   color: inherit; /* Setzt die Farbe auf die des Elternelements */
 }
 
-.facebook {
-  color: black;
+/* .facebook {
+  color: rgb(24, 119, 242);
 }
 .youtube {
-  color: black;
+  color: rgb(255, 0, 0);
 }
 .linkedin {
-  color: black;
+  color: rgb(0, 119, 181);
+}
+
+.github {
+  color: rgb(36, 41, 46);
+}
+
+.instagram {
+  color: rgb(247, 0, 255);
+} */
+
+.facebook,
+.youtube,
+.linkedin,
+.github,
+.instagram {
+  color: #212529;
 }
 
 .icon-large {
-  font-size: 26px;
+  font-size: 28px;
+}
+
+/* ///////////////////////// FOOTER END /////////////////////////// */
+
+/* ///////////////////////// MEDIA QUERIES /////////////////////////// */
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    display: none;
+  }
+
+  .carousel-item {
+    height: 50vh; /* Setze die Höhe nach deinen Bedürfnissen */
+  }
+
+  .carousel-item img {
+    height: 100%; /* Stellt sicher, dass das Bild die Höhe des Carousel-Items einnimmt */
+    object-fit: cover; /* Verhindert Verzerrungen des Bildes */
+  }
 }

@@ -5,6 +5,8 @@ import {
   faFacebookF,
   faYoutube,
   faLinkedinIn,
+  faGithub,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
@@ -40,6 +42,24 @@ function Footer() {
               className="social-link linkedin"
             >
               <FontAwesomeIcon icon={faLinkedinIn} className="icon-large" />
+            </a>
+          </li>
+          <li className="social-item">
+            <a
+              href="https://github.com/Phil-star1984?tab=repositories"
+              target="blank"
+              className="social-link github"
+            >
+              <FontAwesomeIcon icon={faGithub} className="icon-large" />
+            </a>
+          </li>
+          <li className="social-item">
+            <a
+              href="https://www.instagram.com/the_million_painter/?hl=de"
+              target="blank"
+              className="social-link instagram"
+            >
+              <FontAwesomeIcon icon={faInstagram} className="icon-large" />
             </a>
           </li>
         </ul>
