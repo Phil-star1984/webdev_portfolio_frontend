@@ -93,6 +93,53 @@ button:focus-visible {
 
 /* ///////////////////////// PROJECTPORTFOLIO END /////////////////////////// */
 
+/* ///////////////////////// JOBTICKER START /////////////////////////// */
+@keyframes tickerAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.jobticker-container p {
+  margin: 0;
+}
+
+.jobticker-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.jobticker-inner-container {
+  animation: tickerAnimation 150s linear infinite; /* Anpassung der Dauer nach Bedarf */
+}
+.ticker-item {
+  position: relative; /* Damit das ::after Pseudo-Element relativ zu diesem Element positioniert wird */
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px; /* Ersetzt margin-right für den Abstand rechts */
+  margin-left: 30px; /* Abstand links */
+}
+
+.ticker-item::after {
+  content: ""; /* Notwendig, damit das Pseudo-Element angezeigt wird */
+  position: absolute;
+  right: -30px; /* Positionierung am rechten Rand des .ticker-item */
+  top: 50%; /* Zentriert die Linie vertikal */
+  transform: translateY(
+    -50%
+  ); /* Korrigiert die Zentrierung basierend auf der Höhe der Linie */
+  height: 70%; /* Höhe der Linie */
+  border-right: 1px solid; /* Die eigentliche Linie/Border */
+}
+
+.ticker-item:last-child::after {
+  display: none; /* Entfernt die Linie vom letzten Element */
+}
+/* ///////////////////////// JOBTICKER END /////////////////////////// */
+
 /* ///////////////////////// FOOTER START /////////////////////////// */
 
 .container_footer {
