@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import axios from "axios";
 import qs from "qs";
 
 function JobTicker() {
   const [jobs, setJobs] = useState([]);
-  /* const url = `https://datausa.io/api/data?drilldowns=Nation&measures=Population`; */
   const getTokenUrl = `https://rest.arbeitsagentur.de/oauth/gettoken_cc`;
   const jobUrl = `https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs`;
 
@@ -63,7 +61,7 @@ function JobTicker() {
             <div key={index} sm={5} lg={2} className="ticker-item p-1 mb-2">
               <p className="fs-5 text-warning lh-m">{item.beruf}</p>
               <p className="fs-6">{item.arbeitgeber}</p>
-              {/* <p>{item.arbeitsort.ort}</p> */}
+              <p className="fs-6 text-success" >{item.arbeitsort.ort}</p>
             </div>
           ))}
       </div>

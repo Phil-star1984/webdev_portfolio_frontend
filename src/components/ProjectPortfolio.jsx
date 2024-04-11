@@ -11,6 +11,7 @@ import hackernews from "../assets/hackernews_mockup.jpg";
 import orbit from "../assets/orbit_mockup.jpg";
 import csvdata from "../assets/csvdata_mockup.jpg";
 import hackernewstwo from "../assets/hackernews_mockup_02.jpg";
+import cody from "../assets/codyapp_mockup.jpg";
 
 function ProjectPortfolio() {
   return (
@@ -86,9 +87,9 @@ function ProjectPortfolio() {
         </Col>
         <Col>
           <Card className="text-secondary" data-bs-theme="dark">
-            <Card.Img variant="top" src={hackernewstwo} className="bg-black" />
+            <Card.Img variant="top" src={cody} className="bg-black" />
             <Card.Body>
-              <Card.Title>HackerNews Website</Card.Title>
+              <Card.Title>Cody AI App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -103,9 +104,9 @@ function ProjectPortfolio() {
         </Col>
         <Col>
           <Card className="text-secondary" data-bs-theme="dark">
-            <Card.Img variant="top" src={aibro} className="bg-black" />
+            <Card.Img variant="top" src={cody} className="bg-black" />
             <Card.Body>
-              <Card.Title>AI.Bro App</Card.Title>
+              <Card.Title>Easy Mosaic</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
