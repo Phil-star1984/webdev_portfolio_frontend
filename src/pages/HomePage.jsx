@@ -4,6 +4,8 @@ import Footer from "../components/Footer.jsx";
 import BrandVision from "../components/BrandVision.jsx";
 import ProjectPortfolio from "../components/ProjectPortfolio.jsx";
 import JobTicker from "../components/JobTicker.jsx";
+import PhilippMulfinger from "../components/PhilippMulfinger.jsx";
+import Test from "../components/Test.jsx";
 
 function HomePage() {
   const user = {
@@ -17,6 +19,8 @@ function HomePage() {
       <BrandVision />
       <JobTicker />
       <ProjectPortfolio />
+      <PhilippMulfinger />
+      <Test />
 
       <Footer />
     </>
