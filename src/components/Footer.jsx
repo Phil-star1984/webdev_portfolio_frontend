@@ -13,7 +13,7 @@ function Footer() {
   return (
     <Container fluid className="container_footer">
       <div className="copyright">
-        &copy; {new Date().getFullYear()} Millionpainter. All Right Reserved.
+        &copy; {new Date().getFullYear()} Millionpainter. All Rights Reserved.
       </div>
       <div className="socials pt-2 pb-5">
         <ul className="social-list">

@@ -12,6 +12,7 @@ import orbit from "../assets/orbit_mockup.jpg";
 import csvdata from "../assets/csvdata_mockup.jpg";
 import hackernewstwo from "../assets/hackernews_mockup_02.jpg";
 import cody from "../assets/codyapp_mockup.jpg";
+import mosaicify from "../assets/mosaicify_mockup.jpg";
 
 function ProjectPortfolio() {
   return (
@@ -72,7 +73,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={csvdata} className="bg-black" />
             <Card.Body>
-              <Card.Title>CSV Data Chart</Card.Title>
+              <Card.Title>CSV Data Dashboard</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -89,7 +90,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={cody} className="bg-black" />
             <Card.Body>
-              <Card.Title>Cody AI App</Card.Title>
+              <Card.Title>Cody AI Chat App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -104,15 +105,19 @@ function ProjectPortfolio() {
         </Col>
         <Col>
           <Card className="text-secondary" data-bs-theme="dark">
-            <Card.Img variant="top" src={cody} className="bg-black" />
+            <Card.Img variant="top" src={mosaicify} className="bg-black" />
             <Card.Body>
-              <Card.Title>Easy Mosaic</Card.Title>
+              <Card.Title>Mosaicify Web App</Card.Title>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Mit der Mosaicify Web App lassen sich Bild-Mosaike für Social
+                Media innerhalb von Sekunden erstellen.
               </Card.Text>
-              <Button variant="primary" className="mr-2">
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://mosaicify.vercel.app"
+              >
                 Website
               </Button>
               <Button variant="primary">Repository</Button>
