@@ -17,6 +17,7 @@ import mosaicify from "../assets/mosaicify_mockup.jpg";
 function ProjectPortfolio() {
   return (
     <Container>
+      <p className="text-dark fs-1 text-center pt-5 mb-0">Full-Stack & Frontend Projekte</p>
       <Row xs={1} md={2} xl={3} className="g-4 pt-5 pb-5">
         <Col>
           <Card className="text-secondary" data-bs-theme="dark">
@@ -28,10 +29,21 @@ function ProjectPortfolio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
-              <Button variant="primary" className="mr-2">
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://orbitgaming.netlify.app"
+              >
                 Website
               </Button>
-              <Button variant="primary">Repository</Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/orbit_frontend"
+              >
+                Repository
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -45,10 +57,21 @@ function ProjectPortfolio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
-              <Button variant="primary" className="mr-2">
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://hn-new.vercel.app"
+              >
                 Website
               </Button>
-              <Button variant="primary">Repository</Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://hn-new.vercel.app"
+              >
+                Repository
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -62,10 +85,21 @@ function ProjectPortfolio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
-              <Button variant="primary" className="mr-2">
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://ai-bro.vercel.app"
+              >
                 Website
               </Button>
-              <Button variant="primary">Repository</Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/ai_news"
+              >
+                Repository
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -79,10 +113,21 @@ function ProjectPortfolio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
-              <Button variant="primary" className="mr-2">
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://kickass-projects.vercel.app/weekthree"
+              >
                 Website
               </Button>
-              <Button variant="primary">Repository</Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/kickass_projects"
+              >
+                Repository
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -96,10 +141,21 @@ function ProjectPortfolio() {
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
-              <Button variant="primary" className="mr-2">
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://cody-app.netlify.app/"
+              >
                 Website
               </Button>
-              <Button variant="primary">Repository</Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/cody_frontend"
+              >
+                Repository
+              </Button>
             </Card.Body>
           </Card>
         </Col>
@@ -120,7 +176,13 @@ function ProjectPortfolio() {
               >
                 Website
               </Button>
-              <Button variant="primary">Repository</Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/mosaicify"
+              >
+                Repository
+              </Button>
             </Card.Body>
           </Card>
         </Col>
