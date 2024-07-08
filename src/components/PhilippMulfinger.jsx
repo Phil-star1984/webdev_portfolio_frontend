@@ -13,15 +13,14 @@ function PhilippMulfinger() {
           <div className="text-secondary mt-sm-4 mb-sm-4">
             <h1>Hi, ich bin Phil👋</h1>
             <h3 className="font-weight-light">
-              Seit meinen Anfängen als Senior Art Director Online🎨 und jetzt
-              als Webentwickler war mein Karriereweg voller vielfältiger
-              Erfahrungen und Möglichkeiten. Jetzt bringe ich meine
-              Designkompetenz🖌️ in den digitalen Bereich ein💻 und bin auf
-              Technologien wie React, Express.js und die MERN- und PERN-Stacks
-              spezialisiert. 🚀 Meine Reise ist eine kontinuierliche
-              Weiterentwicklung und ich freue mich darauf, neue Horizonte zu
-              erkunden und an spannenden Projekten mitzuarbeiten. Lasst uns
-              gemeinsam fantastische digitale Produkte entwickeln!
+              Seit meinen Anfängen als Art Director Online🎨 und jetzt als Web
+              Developer war mein Karriereweg voller vielfältiger Erfahrungen und
+              Möglichkeiten. Jetzt bringe ich meine Designkompetenz🖌️ in die Web
+              & App Entwicklung ein💻 und bin auf Technologien wie React,
+              Express.js und den MERN-Stacks spezialisiert. 🚀 Meine Reise ist
+              eine kontinuierliche Weiterentwicklung und ich freue mich darauf,
+              neue Horizonte zu erkunden. Lasst uns gemeinsam fantastische
+              digitale Produkte entwickeln!
             </h3>
             {/* <h3 className="font-weight-light">
               From my early days as a Senior Art Director🎨, and now as a Web

@@ -17,7 +17,9 @@ import mosaicify from "../assets/mosaicify_mockup.jpg";
 function ProjectPortfolio() {
   return (
     <Container>
-      <p className="text-dark fs-1 text-center pt-5 mb-0">Full-Stack & Frontend Projekte</p>
+      <p className="text-dark fs-1 text-center pt-5 mb-0">
+        Full-Stack Web & App Projekte
+      </p>
       <Row xs={1} md={2} xl={3} className="g-4 pt-5 pb-5">
         <Col>
           <Card className="text-secondary" data-bs-theme="dark">
@@ -51,7 +53,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={hackernewstwo} className="bg-black" />
             <Card.Body>
-              <Card.Title>HackerNews Website</Card.Title>
+              <Card.Title>HackerNews Mobile App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -79,7 +81,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={aibro} className="bg-black" />
             <Card.Body>
-              <Card.Title>AI.Bro App</Card.Title>
+              <Card.Title>AI.Bro Web App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit

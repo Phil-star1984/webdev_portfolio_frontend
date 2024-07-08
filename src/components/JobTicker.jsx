@@ -70,3 +70,5 @@ function JobTicker() {
 }
 
 export default JobTicker;
+
+
