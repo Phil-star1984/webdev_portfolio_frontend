@@ -196,6 +196,23 @@ ul.social-list {
   font-size: 28px;
 }
 
+.phil-button {
+  border: 0;
+  color: white;
+  background: rgb(255, 0, 143);
+  background: linear-gradient(
+    56deg,
+    rgba(255, 0, 143, 1) 0%,
+    rgba(99, 0, 138, 1) 93%
+  );
+}
+
+.phil-button:hover {
+  border: 0;
+  color: white;
+  background: rgba(99, 0, 138, 1);
+}
+
 /* ///////////////////////// FOOTER END /////////////////////////// */
 
 /* ///////////////////////// MEDIA QUERIES /////////////////////////// */

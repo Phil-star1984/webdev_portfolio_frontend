@@ -25,21 +25,22 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={orbit} className="bg-black" />
             <Card.Body>
-              <Card.Title>Orbit Gaming Store</Card.Title>
+              <Card.Title className="text-white-50">Orbit Gaming Store</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
               <Button
-                variant="primary"
-                className="mr-2"
+                variant="warning"
+                className="mr-2 phil-button"
                 target="_blank"
                 href="https://orbitgaming.netlify.app"
               >
                 Website
               </Button>
               <Button
+              className="phil-button"
                 variant="primary"
                 target="_blank"
                 href="https://github.com/Phil-star1984/orbit_frontend"
@@ -53,7 +54,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={hackernewstwo} className="bg-black" />
             <Card.Body>
-              <Card.Title>HackerNews Mobile App</Card.Title>
+              <Card.Title className="text-white-50">HackerNews Mobile App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -81,7 +82,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={aibro} className="bg-black" />
             <Card.Body>
-              <Card.Title>AI.Bro Web App</Card.Title>
+              <Card.Title className="text-white-50">AI.Bro Web App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -109,7 +110,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={csvdata} className="bg-black" />
             <Card.Body>
-              <Card.Title>CSV Data Dashboard</Card.Title>
+              <Card.Title className="text-white-50">CSV Data Dashboard</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -137,7 +138,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={cody} className="bg-black" />
             <Card.Body>
-              <Card.Title>Cody AI Chat App</Card.Title>
+              <Card.Title className="text-white-50">Cody AI Chat App</Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -165,7 +166,7 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={mosaicify} className="bg-black" />
             <Card.Body>
-              <Card.Title>Mosaicify Web App</Card.Title>
+              <Card.Title className="text-white-50">Mosaicify Web App</Card.Title>
               <Card.Text>
                 Mit der Mosaicify Web App lassen sich Bild-Mosaike für Social
                 Media innerhalb von Sekunden erstellen.
