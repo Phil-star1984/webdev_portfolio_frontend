@@ -1,42 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import qs from "qs";
 
 function JobTicker() {
   const [jobs, setJobs] = useState([]);
-  const getTokenUrl = `https://rest.arbeitsagentur.de/oauth/gettoken_cc`;
   const jobUrl = `https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs`;
 
   useEffect(() => {
-    const getToken = async () => {
-      try {
-        const tokenResponse = await axios.post(
-          getTokenUrl,
-          qs.stringify(
-            {
-              client_id: "c003a37f-024f-462a-b36d-b001be4cd24a",
-              client_secret: "32a39620-32b3-4307-9aa1-511e3d7f48a8",
-              grant_type: "client_credentials",
-            },
-            {
-              headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-              },
-            }
-          )
-        );
-        return tokenResponse.data.access_token;
-      } catch (error) {
-        console.error("Error fetching token", error);
-      }
-    };
-
     const getJobs = async () => {
-      const token = await getToken();
       try {
         const result = await axios.get(jobUrl, {
           headers: {
-            OAuthAccessToken: token,
+            "X-API-Key": "jobboerse-jobsuche", // Verwende die client_id als API Key
           },
           params: {
             was: "Web Developer",
@@ -70,5 +44,3 @@ function JobTicker() {
 }
 
 export default JobTicker;
-
-
