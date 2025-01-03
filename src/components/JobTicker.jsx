@@ -3,29 +3,31 @@ import axios from "axios";
 
 function JobTicker() {
   const [jobs, setJobs] = useState([]);
-  const jobUrl = `https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs`;
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const getJobs = async () => {
-      try {
-        const result = await axios.get(jobUrl, {
-          headers: {
-            "X-API-Key": "jobboerse-jobsuche", // Verwende die client_id als API Key
-          },
-          params: {
-            was: "Web Developer",
-            // Füge weitere Parameter nach Bedarf hinzu
-          },
-        });
-        /* console.log(result); */
-        setJobs(result.data.stellenangebote);
-      } catch (error) {
-        console.error("Job data not available", error);
-      }
-    };
-
-    getJobs();
+    // Serverless Function aufrufen
+    axios
+      .get("/api/jobs")
+      .then((response) => {
+        setJobs(response.data.stellenangebote || []); // Annahme: Die API gibt ein Array unter "stellenangebote" zurück
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching job data:", error);
+        setError(error);
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   return (
     <div className="jobticker-container text-secondary bg-black">
