@@ -17,7 +17,7 @@ function JobTicker() {
             // Füge weitere Parameter nach Bedarf hinzu
           },
         });
-        console.log(result);
+        /* console.log(result); */
         setJobs(result.data.stellenangebote);
       } catch (error) {
         console.error("Job data not available", error);
