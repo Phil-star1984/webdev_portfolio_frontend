@@ -37,7 +37,7 @@ function JobTicker() {
             <div key={index} sm={5} lg={2} className="ticker-item p-1 mb-2">
               <p className="fs-5 text-warning lh-m">{item.beruf}</p>
               <p className="fs-6">{item.arbeitgeber}</p>
-              <p className="fs-6 text-success">{item.arbeitsort.ort}</p>
+              <p className="fs-6 text-primary">{item.arbeitsort.ort}</p>
             </div>
           ))}
       </div>
