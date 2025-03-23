@@ -13,6 +13,9 @@ import csvdata from "../assets/csvdata_mockup.jpg";
 import hackernewstwo from "../assets/hackernews_mockup_02.jpg";
 import cody from "../assets/codyapp_mockup.jpg";
 import mosaicify from "../assets/mosaicify_mockup.jpg";
+import organicbrush from "../assets/organicbrush_mockup.jpg";
+import rechnungstool from "../assets/rechnungstool_mockup.jpg";
+import colorsplash from "../assets/colorsplash_mockup.jpg";
 
 function ProjectPortfolio() {
   return (
@@ -25,23 +28,29 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={orbit} className="bg-black" />
             <Card.Body>
-              <Card.Title className="text-white-50">Orbit Gaming Store</Card.Title>
+              <Card.Title className="text-white-50">
+                Orbit Gaming Store
+              </Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </Card.Text>
               <Button
-                variant="warning"
-                className="mr-2 phil-button"
+                /* variant="warning"
+                className="mr-2 phil-button" */
+                variant="primary"
+                className="mr-2"
                 target="_blank"
                 href="https://orbitgaming.netlify.app"
               >
                 Website
               </Button>
               <Button
-              className="phil-button"
+                /* className="phil-button"
+                variant="primary" */
                 variant="primary"
+                className="mr-2"
                 target="_blank"
                 href="https://github.com/Phil-star1984/orbit_frontend"
               >
@@ -54,7 +63,9 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={hackernewstwo} className="bg-black" />
             <Card.Body>
-              <Card.Title className="text-white-50">HackerNews Mobile App</Card.Title>
+              <Card.Title className="text-white-50">
+                HackerNews Mobile App
+              </Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -110,7 +121,9 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={csvdata} className="bg-black" />
             <Card.Body>
-              <Card.Title className="text-white-50">CSV Data Dashboard</Card.Title>
+              <Card.Title className="text-white-50">
+                CSV Data Dashboard
+              </Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -138,7 +151,9 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={cody} className="bg-black" />
             <Card.Body>
-              <Card.Title className="text-white-50">Cody AI Chat App</Card.Title>
+              <Card.Title className="text-white-50">
+                Cody AI Chat App
+              </Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -166,7 +181,9 @@ function ProjectPortfolio() {
           <Card className="text-secondary" data-bs-theme="dark">
             <Card.Img variant="top" src={mosaicify} className="bg-black" />
             <Card.Body>
-              <Card.Title className="text-white-50">Mosaicify Web App</Card.Title>
+              <Card.Title className="text-white-50">
+                Mosaicify Web App
+              </Card.Title>
               <Card.Text>
                 Mit der Mosaicify Web App lassen sich Bild-Mosaike für Social
                 Media innerhalb von Sekunden erstellen.
@@ -183,6 +200,89 @@ function ProjectPortfolio() {
                 variant="primary"
                 target="_blank"
                 href="https://github.com/Phil-star1984/mosaicify"
+              >
+                Repository
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className="text-secondary" data-bs-theme="dark">
+            <Card.Img variant="top" src={organicbrush} className="bg-black" />
+            <Card.Body>
+              <Card.Title className="text-white-50">
+                Organic Brush App
+              </Card.Title>
+              <Card.Text>
+                Die Organic Brush Web App simuliert natürliches Wachstum auf
+                künstlerische Art und Weise.
+              </Card.Text>
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://organic-brush-app.vercel.app/"
+              >
+                Website
+              </Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/organic-brush-app"
+              >
+                Repository
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className="text-secondary" data-bs-theme="dark">
+            <Card.Img variant="top" src={rechnungstool} className="bg-black" />
+            <Card.Body>
+              <Card.Title className="text-white-50">Mobile Bill App</Card.Title>
+              <Card.Text>
+                Erstelle mit Mobile Bill schnell und mobil Rechnungen, wenn du
+                gerade unterwegs bist.
+              </Card.Text>
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://rechnung-erstellen-online.vercel.app/"
+              >
+                Website
+              </Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/Rechnung-Erstellen-Online"
+              >
+                Repository
+              </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className="text-secondary" data-bs-theme="dark">
+            <Card.Img variant="top" src={colorsplash} className="bg-black" />
+            <Card.Body>
+              <Card.Title className="text-white-50">ColorSplash App</Card.Title>
+              <Card.Text>
+                Mit ColorSplash kannst du effektiv und einfach Farbverläufe für
+                Web- und App-Projekte erstellen.
+              </Card.Text>
+              <Button
+                variant="primary"
+                className="mr-2"
+                target="_blank"
+                href="https://colorsplash-kappa.vercel.app/"
+              >
+                Website
+              </Button>
+              <Button
+                variant="primary"
+                target="_blank"
+                href="https://github.com/Phil-star1984/colorsplash"
               >
                 Repository
               </Button>
