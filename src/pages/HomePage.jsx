@@ -20,7 +20,7 @@ function HomePage() {
       <JobTicker />
       <ProjectPortfolio />
       <PhilippMulfinger />
-      <Test />
+      {/* <Test /> */}
 
       <Footer />
     </>
