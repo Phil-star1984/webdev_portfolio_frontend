@@ -12,7 +12,7 @@ function PhilippMulfinger() {
           alt="Philipp Mulfinger"
         />
         <div className="w-lg-50 d-flex justify-content-center align-items-center">
-          <div className="text-secondary mt-sm-4 mb-sm-4">
+          <div className="text-secondary mt-4 mb-4">
             <h1>Hi, ich bin Phil👋</h1>
             <h3 className="font-weight-light">
               Seit meinen Anfängen als Art Director Online🎨 und jetzt als Web

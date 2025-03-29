@@ -20,7 +20,7 @@ export default function Home({ user }) {
   return (
     <>
       <Navbar expand="lg" fixed="top" /* bg="dark" */ data-bs-theme="dark">
-        <Container>
+        <Container className="px-3">
           <Navbar.Brand href="#home" className="text-secondary">
             WebDev // {user.name.slice("l", 4) + "ipp" + " Mulfinger"}
           </Navbar.Brand>
